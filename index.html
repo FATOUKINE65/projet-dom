@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet DOM : Application de Suivi de Lecture</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ma Bibliothèque</h1>
+        <button id="add-book-btn">Ajouter un livre</button>
+    </header>
+    <main id="book-list">
+        <!-- La liste des livres sera affichée ici -->
+    </main>
+
+    <!-- Modal pour ajouter un livre -->
+    <div id="add-book-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Ajouter un livre</h2>
+            <form id="add-book-form">
+                <input type="text" id="title" placeholder="Titre" required>
+                <input type="text" id="author" placeholder="Auteur" required>
+                <button type="submit">Ajouter</button>
+            </form>
+        </div>
+    </div>
+ 
+    
+    <script src="app.js"></script>
+</body>
+</html>
